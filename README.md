@@ -7,7 +7,7 @@ Welcome to `Grocery Tracker` the app that tracks what you need and when you plac
 
 ### Server Side (Back end)
 
-This is a standalone api, in its own folder `server-side` that serves up a rest api with data at the following endpoints:
+This is a standalone api, in its own folder `server-side` that serves up a rest api with the following endpoints:
 
 - `localhost:8080/api/popular-items`: Will display all of the popular items in the database, to make adding to your grocery list easier the next time
 - `localhost:8080/api/items`: Will display all of the items you have added to your grocery list

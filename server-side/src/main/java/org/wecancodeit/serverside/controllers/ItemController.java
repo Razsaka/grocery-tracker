@@ -48,13 +48,6 @@ public class ItemController {
         return (Collection<Item>) itemRepo.findAll();
     }
 
-    @DeleteMapping("/api/items/{id}/delete-item")
-    public Collection<Item> deleteItem(@PathVariable Long id) throws JSONException {
-        Optional<Item> itemToRemoveOpt = itemRepo.findById(id);
-        if(itemToRemoveOpt.isPresent()){
-            itemRepo.delete(itemToRemoveOpt.get());
-        }
-        return (Collection<Item>) itemRepo.findAll();
-    }
+    // ToDo: delete request
 
 }
